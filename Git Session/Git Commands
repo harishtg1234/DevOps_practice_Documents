@@ -1,1 +1,90 @@
+# how to install GIT on linux
 
+# How to switch to root user
+      sudo su
+
+# To update the package on the AMAZON linux
+      yum update (apt-get update)
+
+# To install git on AMAZON linux
+      yum install git -y
+
+# Command to check the git version
+      git -v
+
+# To list the files in folder
+       ls
+
+# To check the present working directory
+       pwd
+
+# To create a directory
+       mkdir "dir_name"
+
+# Change Dir
+      cd "directory_path"
+
+# To go back to previous folder
+      cd ..
+
+# To clone the repo for first time
+      git clone "repolink"
+
+# To pull the changes from the central/remote repo
+      git pull
+
+# To check the status of the Git repo
+      git status
+
+# To Add all the working files from working area to staging area
+      git add --all
+
+# To Add files one by one from working area to staging area
+      git add filename1,filename2
+
+#To commit the changes
+      git commit -m "message"
+
+#To push the changes to remote server
+      git push "repolink"
+
+First time it will ask for Authorization , popup from github where u need to input the login details
+
+#To pull the changes to remote server
+      git pull
+
+# How to to create new branch from the main branch
+      git checkout -b "branch_name"
+
+# How to check the branches
+      git branch
+
+# How to switch between the branches
+      git checkout "branch_name"
+
+# How to to clone a specific branch from the git hub server
+      git clone --branch "branch_name" repo_link
+
+# To push the new brnach as upstream branch
+      git push --set-upstream origin "branch_name"
+
+# To check the git commit logs
+      git log
+
+# To quit from log area
+       q
+
+# To Revert the changes done we can use "commit id" and revert
+      git revert "commit_id"
+
+# Cherry picking is the act of picking a commit from a branch and applying it to another.
+       git cherry-pick "Commit_id"
+
+#Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+       git rebase "branch_name"
+
+#Sets the name you want attached to your commit transactions
+       git config --global user.name "[name]"
+
+# Sets the email you want attached to your commit transactions
+       git config --global user.email "[email address]"
